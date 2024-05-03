@@ -1,0 +1,13 @@
+.all{
+    width: 1150px;
+    margin: 0% auto;
+}
+.content{
+display: flex;
+flex-direction: row;
+gap:100px;
+}
+.col{
+display: flex;
+
+}
