@@ -1,7 +1,4 @@
-let post = {
-    title:'',
-    text:'',
-};
+const posts = [];
 const postTitleInputNode = document.getElementById('base-input__js');//ввод текста в заголовок
 const postTextInputNode = document.getElementById('base-input-main__js');//ввод основного текста 
 const buttonPublic = document.getElementById('base-btn__js');
@@ -11,13 +8,9 @@ buttonPublic.addEventListener('click', function(){
      //получить данные из поля ввода
      const postFromUser = getPostFromUser();
 
-    setPost(postFromUser); //сохранить пост
+    addPost(postFromUser); //сохранить пост
 
-    renderPost(); //отобразить пост
-
-
-   
-    
+    renderPosts(); //отобразить пост 
     
 
 });
@@ -31,21 +24,28 @@ function getPostFromUser(){
     };
 }
  //сохранить пост
-function setPost(newPost){
- post = newPost;
+function addPost({title, text}){ //добавление в массив "posts" посты
+ posts.push({
+    title,
+    text,
+ });
 }
-function getPost(){
-    return post;
+function getPosts(){
+    return posts;
 }
  //отобразить пост
- function renderPost(){
-   const post = getPost();
+ function renderPosts(){
+   const posts = getPosts();
 
-    const postHTML = `
-    <div class = 'post'>
+   let postsHTML = '';
+   posts.forEach(post => { //+=прибавление
+    postsHTML+=  ` <div class = 'post'>  
     <p class = "post-title"> ${post.title} </p>
     <p class = "post-text"> ${post.text} </p>
     </div>
     `;
-    postNew.innerHTML = postHTML;
+   });
+
+  
+    postNew.innerHTML = postsHTML;
  }
