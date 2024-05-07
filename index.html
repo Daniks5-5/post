@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/style.css">
     <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
     <title>Blog App</title>
 </head>
 <body>
@@ -12,13 +15,13 @@
 <div class="content">
     <div class="col">
         <div class="base">
-            <h1 >Новый пост</h1>
+            <h1 class="main-word">Новый пост</h1>
         
         <div class="base-input"> <!--заголовок-->
-            <input id = "base-input__js" class = "base-input__title" type="text">
-            <p id="base-input-limit__js" class="base-input__limit"></p>
+            <input id = "base-input__js" class = "base-input__title" type="text" placeholder="Заголовок">
+            <p id="base-input-limit__js" class="base-input__limit" ></p>
 
-            <input  id="base-input-main__js" type="text" class="base-input__main">
+            <input  id="base-input-main__js" type="text" class="base-input__main" placeholder="Напиши пост">
             <p id="base-limit__js" class="base-input__limit"></p>
         </div>    
         <div class="base-btn">
@@ -30,7 +33,7 @@
     <div class="col">
         
 <div class="post-section">
-    <h2>Лента</h2>
+    <h2 class="main-word-lents">Лента</h2>
      
     <div id = "post-js" class="post">
         Лента пустая...
