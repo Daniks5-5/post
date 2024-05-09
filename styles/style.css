@@ -7,7 +7,8 @@
 .content{
 display: flex;
 flex-direction: row;
-gap:45%;
+gap:10em;
+
 }
 .main-word{
     font-family: var(--third-family);
@@ -15,6 +16,8 @@ font-weight: 400;
 font-size: 60px;
 color: #000;
 margin-top: 120px;
+max-width: 376px;
+width: 100%;
 }
 .col{
 display: flex;
@@ -55,6 +58,18 @@ padding-left: 5%;
 .base-btn {
 }
 .base-btn__public {
+    
+    margin-top: 10%;
+    border: 2px solid #3253ff;
+    max-width: 400px;
+    width: 100%;
+   height: 62px;
+   background: #3253ff;
+   font-family: var(--third-family);
+font-weight: 400;
+font-size: 25px;
+color: #fff;
+
 }
 .post-section {
 }
@@ -68,4 +83,29 @@ color: #000;
 .post {
 }
 .base-data {
+}
+.post-title{
+    margin-top: 5%;
+    max-width: 563px;
+    width: 100%;
+    font-family: var(--font-family);
+font-weight: 400;
+font-size: 36px;
+color: rgba(0, 0, 0, 0.9);
+}
+.post-text{
+    margin-top: 2%;
+    max-width: 563px;
+    width: 100%;
+    font-family: var(--font-family);
+font-weight: 400;
+font-size: 25px;
+color: rgba(0, 0, 0, 0.8);
+margin-bottom: 2%;
+}
+.post-data{
+    font-family: var(--font-family);
+font-weight: 400;
+font-size: 14px;
+color: rgba(7, 121, 255, 0.8);
 }

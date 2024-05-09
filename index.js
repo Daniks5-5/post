@@ -8,6 +8,12 @@ const postNew = document.getElementById('post-js');//заголовок
 const postData = document.getElementById('base-data-js'); //дата заголовка
 
 
+
+
+
+
+
+
 buttonPublic.addEventListener('click', function(){
      //получить данные из поля ввода
      const postFromUser = getPostFromUser();
@@ -15,6 +21,7 @@ buttonPublic.addEventListener('click', function(){
     addPost(postFromUser); //сохранить пост
 
     renderPosts(); //отобразить пост 
+    Photo();
    
     
 
