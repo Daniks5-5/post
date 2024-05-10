@@ -127,5 +127,6 @@ cursor: pointer;
 .addImg{
 display: none;
 max-width: 500px;
+min-width: 100px;
 width: 100%;
 }

@@ -19,8 +19,14 @@ reader.readAsDataURL(event.target.files[0]);
 });
 
 //замена кнопки вместо input
-window.onload = () => {
-
+window.onload = () => { 
+    const addFile = document.getElementById('addPhoto');
+    const addFilebtn = document.getElementById('addPhoto__btn-js');
+   
+//нажатие кнопки
+    addFilebtn.addEventListener('click', function(){
+        addFile.click();
+    } );
 };
 
 
