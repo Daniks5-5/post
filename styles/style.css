@@ -81,6 +81,7 @@ font-size: 60px;
 color: #000;
 }
 .post {
+    word-wrap: break-word; /* свойство, чтобы текст  не выходил за пределы div */
 }
 .base-data {
 }
@@ -97,9 +98,11 @@ color: rgba(0, 0, 0, 0.9);
     margin-top: 2%;
     max-width: 563px;
     width: 100%;
+  padding-right: 50px;
     font-family: var(--font-family);
 font-weight: 400;
-font-size: 25px;
+font-size: 3vmax; 
+font-size: 2vw;
 color: rgba(0, 0, 0, 0.8);
 margin-bottom: 2%;
 }
@@ -108,4 +111,21 @@ margin-bottom: 2%;
 font-weight: 400;
 font-size: 14px;
 color: rgba(7, 121, 255, 0.8);
+}
+.addPhoto__btn{
+margin-top: 10%;
+border: 2px solid #000;
+max-width: 253px;
+width: 100%;
+height: 43px;
+background: none;
+cursor: pointer;
+}
+.addPhoto__text{
+    color: gray;
+}
+.addImg{
+display: none;
+max-width: 500px;
+width: 100%;
 }

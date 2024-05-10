@@ -7,9 +7,21 @@ const textLimit = document.getElementById('base-limit__js'); //лимит тек
 const postNew = document.getElementById('post-js');//заголовок
 const postData = document.getElementById('base-data-js'); //дата заголовка
 
+//загрузка и отображение изображения на странице
+document.getElementById('addPhoto').onchange = ('file', function(event){
+let reader = new FileReader();
+reader.onload = function(){
+    let output = document.getElementById('addImg-js');
+    output.src = reader.result;
+    output.style.display = 'block';
+};
+reader.readAsDataURL(event.target.files[0]);
+});
 
+//замена кнопки вместо input
+window.onload = () => {
 
-
+};
 
 
 
