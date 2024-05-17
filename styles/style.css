@@ -1,5 +1,6 @@
 .all{
     max-width: 1150px;
+    width: 100%;
     margin: 0% auto;
     padding-left:10px;
     padding-right: 10px;
@@ -72,6 +73,9 @@ color: #fff;
 
 }
 .post-section {
+    max-width: 700px;
+    width: 100%;
+    padding-right: 10px;
 }
 .main-word-lents{
     margin-top: 120px;
@@ -87,7 +91,7 @@ color: #000;
 }
 .post-title{
     margin-top: 5%;
-    max-width: 563px;
+    max-width: 500px;
     width: 100%;
     font-family: var(--font-family);
 font-weight: 400;
@@ -96,7 +100,7 @@ color: rgba(0, 0, 0, 0.9);
 }
 .post-text{
     margin-top: 2%;
-    max-width: 563px;
+    max-width: 500px;
     width: 100%;
   padding-right: 50px;
     font-family: var(--font-family);
@@ -120,6 +124,11 @@ width: 100%;
 height: 43px;
 background: none;
 cursor: pointer;
+}
+.addPhoto__btn:hover{
+background-color: #3253FF;
+color: #fff;
+transition-delay: .5s;
 }
 .addPhoto__text{
     color: gray;
